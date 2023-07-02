@@ -1,12 +1,12 @@
-[Installation](https://github.com/8ButtHead8/hyprland#Installation)
-[Packages](https://github.com/8ButtHead8/hyprland#Packages)
-[Optional packages](https://github.com/8ButtHead8/hyprland#Optional-packages)
-[Drivers](https://github.com/8ButtHead8/hyprland#Drivers)
+* [Installation](https://github.com/8ButtHead8/hyprland#Installation)
+* [Packages](https://github.com/8ButtHead8/hyprland#Packages)
+* [Optional packages](https://github.com/8ButtHead8/hyprland#Optional-packages)
+* [Drivers](https://github.com/8ButtHead8/hyprland#Drivers)
 
 # Installation:
 ```shell
 git clone https://github.com/8ButtHead8/hyprland.git && \
-    chmod +x ./install && \
+    chmod +x ./hyprland && \
     cd ./hyprland && \
     ./install
 ```
