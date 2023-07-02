@@ -1,0 +1,14 @@
+sudo pacman -S --noconfirm \
+	pulseaudio \
+	pulseaudio-alsa \
+	pulseaudio-bluetooth \
+	pulseaudio-equalizer \
+	pulseaudio-jack \
+	pamixer \
+	brightnessctl \
+	bluez \
+	bluez-utils \
+	blueman \
+	network-manager-applet
+
+systemctl enable --now bluetooth

@@ -1,0 +1,70 @@
+* {
+  font-family: Hasklug Nerd Font;
+  font-weight: 400;
+  font-size: 12px;
+  color: #dfdfdf;
+  min-width: 0;
+  min-height: 0;
+}
+
+window#waybar {
+  background-color: transparent;
+}
+
+box.modules-left,
+box.modules-center,
+box.modules-right {
+  margin: 5px 10px;
+}
+
+window > box > box > widget > label,
+window > box > box > widget > box {
+  padding: 0 8px;
+  background-color: #303030;
+  border-radius: 8px;
+}
+
+button {
+  transition: 200ms linear;
+  transition-property: box-shadow, background-color;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+#workspaces {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+
+#workspaces > button {
+  background-color: #303030;
+  border-radius: 8px;
+}
+
+#workspaces > button:hover {
+  background-color: #454545;
+  border-radius: 8px;
+}
+
+#workspaces > button:not(:first-child) {
+  margin-left: 5px;
+}
+
+#workspaces > button.active {
+  background-color: #606060;
+}
+
+#workspaces > button.urgent {
+  background-color: #ca7896;
+}
+
+#workspaces > button.persistent {
+  background-color: #607896;
+}
+
+#battery.warning {
+  background-color: #a58a00;
+}

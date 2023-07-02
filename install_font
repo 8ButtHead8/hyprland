@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+if ! command -v wget &> /dev/null; then
+	sudo pacman -S wget
+fi
+
+wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Hasklig.tar.xz
+mkdir -p ~/.local/share/fonts/Hasklig
+tar -xf ./Hasklig.tar.xz -C ~/.local/share/fonts/Hasklig
+rm ./Hasklig.tar.xz
+fc-cache
+

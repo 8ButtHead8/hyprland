@@ -1,0 +1,83 @@
+#!/usr/bin/env sh
+
+confirm() {
+	read -n1 -rep "Would you like to install $1? (Y/n)" InstallConfirm
+	if [[ $InstallConfirm != "N" && $InstallConfirm != "n" ]]; then
+		return 0
+	fi
+	return 1
+}
+
+if ! command -v git &> /dev/null; then
+	sudo pacman -S --noconfirm git
+fi
+
+if [[ ! -f "/sbin/yay" ]]; then
+	sudo pacman -S --noconfirm base-devel
+	git clone https://aur.archlinux.org/yay.git ./yay-tmp
+	cd ./yay-tmp
+	makepkg -si --noconfirm
+	cd ..
+	rm -rf ./yay-tmp
+fi
+
+if ! command -v git &> /dev/null; then
+	yay -S --noconfirm \
+		hyprland \
+		kitty \
+		waybar \
+		dunst \
+		swww \
+		wofi \
+		hyprpicker \
+		cliphist \
+		flameshot-git \
+		grim \
+		gtklock \
+		pcmanfm \
+		gvfs \
+		neofetch \
+		pipewire \
+		wireplumber \
+		polkit-kde-agent \
+		qt5-wayland \
+		qt6-wayland \
+		xdg-desktop-portal-hyprland \
+		nwg-look \
+		catppuccin-gtk-theme-mocha \
+		papirus-icon-theme-git \
+		udiskie
+	
+	gsettings set org.gnome.desktop.interface gtk-theme 'Catppuccin-Mocha-Standard-Flamingo-Dark'
+	gsettings set org.gnome.desktop.interface icon-theme 'Papirus'
+	cp ./.gtkrc-2.0 ~/
+	for config in ./.config/*; do
+		cp -r $config ~/.config/
+	done
+	
+	if $(confirm "Google Chrome"); then
+		yay -S --noconfirm google-chrome
+	fi
+
+	if $(confirm "Flatpak"); then
+		yay -S --noconfirm flatpak
+	fi
+
+	if $(confirm "Telegram"); then
+		yay -S --noconfirm telegram-desktop
+	fi
+	
+	if $(confirm "Steam"); then
+		yay -S --noconfirm steam
+	fi
+	
+	if $(confirm "VLC"); then
+		yay -S --noconfirm vlc
+	fi
+
+	if $(confirm "Qview"); then
+		yay -S --noconfirm qview
+	fi
+
+fi
+

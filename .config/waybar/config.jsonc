@@ -1,0 +1,24 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 20,
+  "spacing": 5,
+  "exclusive": true,
+  "fixed-center": false,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  "modules-left": ["clock", "wlr/workspaces", "hyprland/window"],
+  "modules-right": [
+    "hyprland/language",
+    "battery",
+    "cpu",
+    "memory",
+    "temperature",
+    "pulseaudio",
+    "backlight",
+    "disk",
+    "network",
+    "tray"
+  ],
+  "include": ["~/.config/waybar/modules.jsonc"]
+}

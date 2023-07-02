@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+
+confirm() {
+	read -n1 -rep "Would you like to install $1? (Y/n)" InstallConfirm
+	if [[ $InstallConfirm != "N" && $InstallConfirm != "n" ]]; then
+		return 0
+	fi
+	return 1
+}
+
+if $(confirm "Hyprland"); then
+	./install_hyprland
+fi
+
+if $(confirm "Nerd Font"); then
+	./install_font
+fi
+
+if $(confirm "drivers"); then
+	./install_drivers
+fi
