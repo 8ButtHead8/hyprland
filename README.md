@@ -28,7 +28,7 @@ git clone https://github.com/8ButtHead8/hyprland.git && \
 * [neofetch](https://archlinux.org/packages/extra/any/neofetch/)
 * [pipewire](https://archlinux.org/packages/extra/x86_64/pipewire/)
 * [wireplumber](https://archlinux.org/packages/extra/x86_64/wireplumber/)
-* [polkit-kde-agent](https://archlinux.org/packages/extra/x86_64/polkit-kde-agent/)
+* [mate-polkit](https://archlinux.org/packages/extra/x86_64/mate-polkit/)
 * [qt5-wayland](https://archlinux.org/packages/extra/x86_64/qt5-wayland/)
 * [qt6-wayland](https://archlinux.org/packages/extra/x86_64/qt6-wayland/)
 * [xdg-desktop-portal-hyprland](https://archlinux.org/packages/extra/x86_64/xdg-desktop-portal-hyprland/)

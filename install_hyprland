@@ -39,7 +39,7 @@ if ! command -v git &> /dev/null; then
 		neofetch \
 		pipewire \
 		wireplumber \
-		polkit-kde-agent \
+		mate-polkit \
 		qt5-wayland \
 		qt6-wayland \
 		xdg-desktop-portal-hyprland \
