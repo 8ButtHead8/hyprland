@@ -7,7 +7,12 @@
   "fixed-center": false,
   "passthrough": false,
   "gtk-layer-shell": true,
-  "modules-left": ["clock", "wlr/workspaces", "hyprland/window"],
+  "modules-left": [
+    "custom/updates",
+    "clock",
+    "wlr/workspaces",
+    "hyprland/window"
+  ],
   "modules-right": [
     "hyprland/language",
     "battery",
