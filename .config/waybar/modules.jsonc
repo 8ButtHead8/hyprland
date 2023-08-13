@@ -105,10 +105,10 @@
     "spacing": 5
   },
   "custom/updates": {
-    "format": "{icon}{}",
+    "format": "{icon} {}",
     "return-type": "json",
     "format-icons": {
-      "has-updates": " ",
+      "has-updates": "",
       "updated": "󰦕"
     },
     "exec-if": "which waybar-module-pacman-updates",
