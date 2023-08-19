@@ -3,8 +3,10 @@
   font-weight: 400;
   font-size: 12px;
   color: #dfdfdf;
-  min-width: 0;
+  min-width: 20px;
   min-height: 0;
+  padding: 0;
+  margin: 0;
 }
 
 window#waybar {
@@ -12,41 +14,60 @@ window#waybar {
 }
 
 box.modules-left,
-box.modules-center,
 box.modules-right {
   margin: 5px 10px;
 }
 
+box.modules-center {
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
 window > box > box > widget > label,
 window > box > box > widget > box {
-  padding: 0 8px;
+  padding: 4px 8px;
   background-color: #303030;
   border-radius: 8px;
 }
 
 button {
   transition: 200ms linear;
-  transition-property: box-shadow, background-color;
+  transition-property: box-shadow, background-color, border-color;
 }
 
 button:hover {
   box-shadow: none;
+  background-color: #303030;
 }
 
 #workspaces {
   background-color: transparent;
   border-radius: 0;
   padding: 0;
+  margin: 0;
+  background-color: #303030;
+  border-radius: 8px;
+  padding: 0 8px;
 }
 
 #workspaces > button {
-  background-color: #303030;
-  border-radius: 8px;
+  padding: 0;
+  margin: 0;
+  padding: 2px 8px;
+  border-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: transparent;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: transparent;
 }
 
 #workspaces > button:hover {
-  background-color: #454545;
-  border-radius: 8px;
+  background-color: #303030;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 #workspaces > button:not(:first-child) {
@@ -55,16 +76,40 @@ button:hover {
 
 #workspaces > button.active {
   background-color: #606060;
+  background-color: transparent;
+  box-shadow: none;
+  border-bottom-color: #ca7896;
 }
 
 #workspaces > button.urgent {
-  background-color: #ca7896;
+  background-color: transparent;
+  border-top-color: #ca7896;
 }
 
 #workspaces > button.persistent {
-  background-color: #607896;
+  background-color: transparent;
+  border-top-color: #607896;
 }
 
 #battery.warning {
   background-color: #a58a00;
+}
+
+#custom-updates {
+  color: #1793d1;
+  transition: 200ms linear;
+  transition-property: color;
+  font-size: 16px;
+}
+
+#custom-updates {
+  color: inherit;
+  transition: 200ms linear;
+  transition-property: color;
+}
+
+#custom-updates.updated {
+  color: #1793d1;
+  font-size: 18px;
+  padding: 0 8px 0 6px;
 }

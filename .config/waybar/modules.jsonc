@@ -15,7 +15,8 @@
   },
   "clock": {
     "interval": 1,
-    "format": "{:%H:%M:%S | %d/%m (%a)}",
+    "format": "{:%H:%M | %d/%m (%a)}",
+    // "format": "{:%H:%M:%S | %d/%m (%a)}",
     "timezone": "Asia/Yekaterinburg",
     "locale": "ru_RU.UTF-8",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
@@ -105,11 +106,11 @@
     "spacing": 5
   },
   "custom/updates": {
-    "format": "{icon} {}",
+    "format": "{icon}{}",
     "return-type": "json",
     "format-icons": {
-      "has-updates": "",
-      "updated": "󰦕"
+      "has-updates": " ",
+      "updated": "󰣇"
     },
     "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates"
