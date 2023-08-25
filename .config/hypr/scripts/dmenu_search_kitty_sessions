@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+_SESSIONS=(~/STORAGE/KITTY_SESSIONS/*)
+
+for i in "${_SESSIONS[@]}"; do
+  echo ${i##*/}
+done
