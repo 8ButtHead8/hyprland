@@ -3,5 +3,9 @@
 _SESSIONS=(~/STORAGE/KITTY_SESSIONS/*)
 
 for i in "${_SESSIONS[@]}"; do
-  echo ${i##*/}
+	name=${i##*/}
+	# Except test configurations which start with prefix "_"
+	if [[ ! $name =~ ^_ ]]; then
+		echo $name
+	fi
 done
