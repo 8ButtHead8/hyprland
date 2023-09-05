@@ -10,7 +10,7 @@
   "modules-left": [
     "custom/updates",
     "clock",
-    "wlr/workspaces",
+    "hyprland/workspaces",
     "hyprland/window"
   ],
   "modules-right": [

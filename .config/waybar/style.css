@@ -86,11 +86,6 @@ button:hover {
   border-top-color: #ca7896;
 }
 
-#workspaces > button.persistent {
-  background-color: transparent;
-  border-top-color: #607896;
-}
-
 #battery.warning {
   background-color: #a58a00;
 }
@@ -104,6 +99,7 @@ button:hover {
 
 #custom-updates {
   color: inherit;
+  font-size: inherit;
   transition: 200ms linear;
   transition-property: color;
 }

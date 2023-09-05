@@ -1,8 +1,6 @@
 {
-  "wlr/workspaces": {
+  "hyprland/workspaces": {
     "format": "{name}{icon}",
-    // "on-click": "activate",
-    "sort-by-number": true,
     "format-icons": {
       "1": " ",
       "2": " ",
@@ -15,8 +13,7 @@
   },
   "clock": {
     "interval": 1,
-    "format": "{:%H:%M | %d/%m (%a)}",
-    // "format": "{:%H:%M:%S | %d/%m (%a)}",
+    "format": "{:%H:%M:%S | %d/%m (%a)}",
     "timezone": "Asia/Yekaterinburg",
     "locale": "ru_RU.UTF-8",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
