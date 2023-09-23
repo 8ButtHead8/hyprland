@@ -47,7 +47,7 @@ if ! command -v git &> /dev/null; then
 		catppuccin-gtk-theme-mocha \
 		papirus-icon-theme-git \
 		udiskie \
-		waybar-module-pacman-updates-git
+		waybar-updates
 	
 	gsettings set org.gnome.desktop.interface gtk-theme 'Catppuccin-Mocha-Standard-Flamingo-Dark'
 	gsettings set org.gnome.desktop.interface icon-theme 'Papirus'

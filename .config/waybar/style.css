@@ -1,7 +1,7 @@
 * {
   font-family: Hasklug Nerd Font;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 10px;
   color: #dfdfdf;
   min-width: 20px;
   min-height: 0;
@@ -11,6 +11,8 @@
 
 window#waybar {
   background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
 
 box.modules-left,
@@ -26,7 +28,7 @@ box.modules-center {
 
 window > box > box > widget > label,
 window > box > box > widget > box {
-  padding: 4px 8px;
+  padding: 4px 6px;
   background-color: #303030;
   border-radius: 8px;
 }
@@ -47,14 +49,14 @@ button:hover {
   padding: 0;
   margin: 0;
   background-color: #303030;
-  border-radius: 8px;
-  padding: 0 8px;
+  border-radius: 6px;
+  padding: 0 6px;
 }
 
 #workspaces > button {
   padding: 0;
   margin: 0;
-  padding: 2px 8px;
+  padding: 4px 6px;
   border-radius: 0px;
   border-bottom-style: solid;
   border-bottom-width: 2px;
@@ -71,7 +73,7 @@ button:hover {
 }
 
 #workspaces > button:not(:first-child) {
-  margin-left: 5px;
+  margin-left: 4px;
 }
 
 #workspaces > button.active {
@@ -94,7 +96,6 @@ button:hover {
   color: #1793d1;
   transition: 200ms linear;
   transition-property: color;
-  font-size: 16px;
 }
 
 #custom-updates {
@@ -106,6 +107,6 @@ button:hover {
 
 #custom-updates.updated {
   color: #1793d1;
-  font-size: 18px;
-  padding: 0 8px 0 6px;
+  font-size: 16px;
+  padding: 0 6px 0 4px;
 }
