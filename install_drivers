@@ -6,7 +6,9 @@ sudo pacman -S --noconfirm \
 	pulseaudio-bluetooth \
 	pulseaudio-equalizer \
 	pulseaudio-jack \
+	apulse \
 	pamixer \
+	pavcontrol \
 	brightnessctl \
 	bluez \
 	bluez-utils \
