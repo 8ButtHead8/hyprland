@@ -33,7 +33,7 @@ if ! command -v git &> /dev/null; then
 		cliphist \
 		flameshot-git \
 		grim \
-		gtklock \
+		waylock \
 		pcmanfm \
 		gvfs \
 		neofetch \
