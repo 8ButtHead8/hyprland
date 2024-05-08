@@ -92,6 +92,11 @@ button:hover {
   background-color: #a58a00;
 }
 
+#battery.plugged,
+#battery.charging {
+  background-color: #73c26f;
+}
+
 #custom-updates {
   color: #1793d1;
   transition: 200ms linear;
