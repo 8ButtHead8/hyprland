@@ -102,16 +102,5 @@
     "icon-size": 14,
     "show-passive": true,
     "spacing": 5,
-  },
-  "custom/updates": {
-    "format": "{icon}{}",
-    "return-type": "json",
-    "format-icons": {
-      "has-updates": " ",
-      "pending-updates": " ",
-      "updated": "󰣇",
-    },
-    "exec-if": "which waybar-updates",
-    "exec": "waybar-updates -l 10000",
-  },
+  }
 }

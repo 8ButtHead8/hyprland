@@ -8,7 +8,6 @@
   "passthrough": false,
   "gtk-layer-shell": true,
   "modules-left": [
-    "custom/updates",
     "clock",
     "hyprland/workspaces",
     "hyprland/window"
